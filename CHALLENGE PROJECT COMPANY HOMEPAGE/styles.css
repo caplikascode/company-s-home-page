@@ -1,0 +1,683 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.nav-mobile a {
+    text-decoration: none;
+}
+  
+.nav-mobile {
+    padding: 0 20px;
+    height: 50px;
+    display: none;
+    justify-content: space-between;
+}
+  
+#mobile-logo{
+    width: 22vw;
+    cursor: pointer;
+    padding-top: 20px;
+} 
+  
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+  
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+  
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+  
+.open .bar2 {
+  opacity: 0;
+}
+  
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+  
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.open .mobile-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+  
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+  
+.mobile-menu li {
+    padding-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+  
+
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(./images/christopher-gower-m_HRfLhgABo-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.navbar{
+    width: 90%;
+    margin: auto;
+    padding: 52px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 15vw;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0%;
+    background: #FF4500;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%
+}
+
+
+
+  
+
+.content{
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.content h1{
+    font-size: 4vw;
+    margin-top: 80px;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #FF4500;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.content span{
+ transition: 0.5s;
+ z-index: -1; 
+ position: absolute;;
+ left: 0;
+ bottom: 0;
+ background: #FF4500;
+ height: 100%;
+ width: 0%
+} 
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border: none;
+}
+
+
+
+/*SERVICES*/
+
+
+.services-container{
+    background-color: #4B4A4A;
+}
+
+
+.services-header h1{
+    font-size: 2rem;
+    color: white;
+    text-align: left;
+    padding: 4vw 24vw 0px;
+}
+
+
+.card-container{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 200px;
+    margin: 0 auto;
+    width: auto;
+}
+
+.card{
+    border: 1px solid grey;
+    height: 200px;
+    width: 130px;
+    margin: 20px 15px;
+    padding: 20px;
+    font-size: 0.8rem;
+    text-align: center;
+    background-color: #3F3F3F;
+}
+
+.card h1{
+    color: #fff;
+    padding-bottom: 40px;
+    font-size: 1.2rem;
+}
+
+.card p{
+    color: grey;
+}
+
+.card img{
+    max-width: 40%;
+    padding-bottom: 15px;
+}
+
+.card:hover{
+    background-color: grey;
+    color: white;
+    transform: scale(1.07);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+
+
+/*TEAM*/
+
+.meet{
+    background-color: #3F3F3F;
+}
+
+.team-header h1{
+   font-size: 2.5vw;
+   color: white; 
+   text-align: center;
+   padding-top: 60px;
+   padding-bottom: 20px;
+   letter-spacing: 1px;
+}
+
+.team-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.team-card{
+    margin: 4vh 4vh;
+    text-align: center;
+    padding: 0px;
+    max-width: 250px;
+    background-color: #4B4A4A;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.team-card img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card-info {
+ padding: 15px 0 7px
+}
+
+.card-info span{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.card-info h6{
+    color: white;
+    margin-bottom: 7px;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.card-info a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 12px 5px 0;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    line-height: 30px;
+    transition: all 0.5s;
+}
+
+.card-info a:hover:nth-child(1){
+    color: white;
+    background-color: #1877f2;
+}
+
+.card-info a:hover:nth-child(2){
+    color: white;
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.card-info a:hover:nth-child(3){
+    color: white;
+    background-color: #1877f2;
+}
+
+
+.web-services{
+  background-color: #383838;
+}
+
+.web-header{
+    font-size: 25px;
+    color: white; 
+    text-align: center;
+    padding-top: 100px;
+    letter-spacing: 1px;
+}
+
+.content-container{
+    width: 1000px;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    flex-wrap: wrap;
+}
+
+.web-content{
+    margin: 25px 50px 75px 70px;
+    color: white;
+}
+
+
+.web-content h1{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.web-content p{
+    margin-top: 15px;
+    line-height: 22px;
+    letter-spacing: 1px;
+}
+
+.process{
+    width: 400px;
+    height: 720px;
+    color: white;
+}
+
+.process ul li:before {
+    content: '✓';
+    padding-right: 5px;
+    color:  #FF4500;
+}
+
+
+.process h1{
+    padding: 10px 10px 10px 10px;
+    font-weight: 500;
+}
+
+.process ul{
+    padding: 10px;
+}
+
+.process ul li{
+    padding-top: 20px;
+}
+
+
+
+/*FOOOTER*/
+
+.row{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+
+
+
+.footer{
+    background-color: #2A2C2F;   
+    padding: 70px 100px;
+    line-height: 1.5;
+}
+
+.foooter-container{
+    max-width: 1500px;
+}  
+
+.footer-col{
+    width: 25%;
+}
+
+.footer-col h4{
+    color: white;
+    font-weight: 500;
+    position: relative;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 30px
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #FF4500;
+    height: 2px;
+    box-sizing: border-box;
+    width: 70px;
+}
+
+
+
+.footer-col ul li:not(:last-child){
+ margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+ font-size: 16px;
+ text-transform: capitalize;
+ text-decoration: none;
+ font-weight: 300;
+ color: #bbbb;
+ display: block;
+ transition: all 0.3s ease;
+}
+
+.footer-col ul li{
+    color: #bbbb;
+}
+
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 10px;
+}
+
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 5px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+.review span{
+    color: #FF4500;
+	width: 20px;
+    color: #ffffff;
+}
+
+.copyright h4{
+    color: white;
+    padding-top: 60px;
+    line-height: 1.5;
+    font-weight: 100;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    .navbar ul li {
+        display: none;
+    }
+  
+   #hamburger-icon {
+      display: block;
+    }
+
+    
+    .card-container{
+       flex-direction: column;
+       padding: 0px;
+    }
+
+    .services-header h1{
+        display: none;
+    }
+
+    .card{
+        margin: 20;
+        padding: 5px;
+    }
+    
+    .team-container{
+        flex-direction: column;
+    }
+
+    .team-header h1{
+      display:none;
+    }
+    
+    .nav-mobile nav {
+        display: none;
+    }
+    
+    #hamburger-icon {
+      display: block;
+    }
+    
+    .nav-mobile{
+        display: flex;
+    }
+
+    .logo{
+        display: none;
+    }
+    
+    .row{
+        padding: 0;
+    }
+    
+}  
+
+
+@media only screen and (max-width: 767px) {
+   
+    html{
+        font-size: 15px;
+    }
+    
+    br{
+        display: none;
+    }
+
+    .web-content {
+        margin: 10px 40px 50px 40px;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    .flex{
+        padding-top: 55px;
+    }
+    
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .row{
+        padding: 0;
+    }
+}
+
+/*TABLET*/
+
+@media only screen and (min-width:321px) and (max-width:768px) {
+
+    .row{
+        padding-left: 30px;
+    }
+
+    .navbar ul li {
+        display: none;
+    }
+
+    .nav-mobile nav {
+        display: none;
+    }
+  
+   #hamburger-icon {
+      display: block;
+    }
+
+    .nav-mobile{
+        display: flex;
+    }
+
+    .logo{
+        display: none;
+    }
+
+   br{
+    display: none;
+   }
+
+   .services-header h1{
+    padding: 10vw 12vw 30px
+   }
+  
+   .card-container{
+    flex-wrap: wrap;
+    padding: 0px;
+ }
+
+.footer{
+    padding: 70px 0px;
+}
+
+.copyright{
+    padding-left: 16px;
+}
+
+.team-header h1{
+    font-size: 2rem;
+}
+   
+}
+   
+
+/*MOBILE*/
+
+@media only screen and (max-width: 574px){
+    .footer-col{
+        width: 100%;
+    }
+
+    .process{
+        margin-left: 20px;
+    }
+    
+    .footer{
+        padding: 70px 0px;
+    }
+
+    .copyright{
+        padding-left: 15px;
+    }
+}
+

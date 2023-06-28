@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>TecTeam</title>
+</head>
+
+<body>     
+   <div class="banner">
+       <div class="nav-mobile">
+        <div id="mobile-logo"><img src="./images/logo (1).png"></div> <!--LOGO-->
+        <nav>
+          <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/about">About</a></li>
+            <li id="login"><a href="/login" >Login</a></li>
+            <li id="signup"><a href="/signup">Signup</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/about">About</a></li>
+            <li id="login"><a href="/login" >Login</a></li>
+            <li id="signup"><a href="/signup">Signup</a></li>
+          </ul>
+        </div>
+    </div> 
+     <div class="navbar">
+            <img src="./images/logo (1).png" class="logo">
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Web design & Hosting</a></li>
+            </ul>
+         </div> 
+    </div>
+    <div class="content">
+        <h1>Your local Trusted IT Experts</h1>  
+        <p>We are your technology experts, we can save you time, worry & even money with our expert support. <br>We promise our prices are fair too.</p>
+        <div>
+            <button type="button"><span></span>Contact Us</button>
+            <button type="button"><span></span>Leave a review</button>
+        </div>
+    </div>
+    
+ <div class="services-container"> 
+    <div class="services-header">
+       <h1>Popular Services we<br> provide include:</h1>
+    </div>
+        <div class="card-container">
+            <div class="card">
+                    <img id="cardlogo" src="./images/coding.png"> <!--logo-->
+                <h1>Software Problems</h1>
+                <p>From Windows to MacOS.</p>
+                </div>
+            <div class="card">
+                    <img id="cardlogo" src="./images/project-management.png">
+                <h1>Purchase Advice</h1>
+                <p>Get the right Tech for you.</p>
+            </div>
+            <div class="card">
+                <img id="cardlogo" src="./images/world-wide-web.png">
+                <h1>Website Development</h1>
+                <p>Your Company's online identity</p>
+            </div>
+            <div class="card">
+                <img id="cardlogo" src="./images/technology.png">
+                <h1>Hardware Repairs</h1>
+                <p>We fix and & replace parts.</p>
+            </div>
+            <div class="card">
+                <img id="cardlogo" src="./images/data-recovery.png">
+                <h1>Data Recovery</h1>
+                <p>Getting your files back.</p>
+            </div>
+      </div>
+</div>
+
+<div class="meet">   <!--flex-direction: column;-->
+    <div class="team-header heading">
+        <h1>Meet The Team</h1>
+    </div> 
+ <div class="team-container">
+        <div class="team-card">
+            <img src="./images/steve.jpg">
+            <div class="card-info">
+                <h6>Steve</h6>
+                <span>Director</span>
+                <div class="social-icon">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="team-card">
+            <img src="./images/harrison.jpg">
+            <div class="card-info">
+                <h6>Harrison</h6>
+                <span>Engineer</span>
+                <div class="social-icon">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="team-card">
+            <img src="./images/lisa.jpg">
+            <div class="card-info">
+                <h6>Steve</h6>
+                <span>Office Manager</span>
+                <div class="social-icon">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+                </div>
+            </div>
+        </div>
+   </div> 
+ 
+</div>
+
+<div class="web-services">
+    <div class="web-header heading">
+      <h1>Web design & Hosting</h1>
+    </div> 
+    <div class="flex">
+       <div class="content-container">
+            <div class="web-content">
+               <h1>Web Design and e-commerce solutions.</h1>
+                <p>The majority of websites we create use WordPress (like this one), WordPress is a content<br> management system (CMS). This CMS gives you the ability to keep your website up to date,<br> don’t worry if you’re not sure how to do that. It’s our job at Tec Team to help, we can do that by<br> providing training for your company or simply do changes for you. For online shops (e-<br>commerce) we prefer to work as a Shopify Partner providing the same design and support to you.<br> Shopify is a e-commerce platform that is fast, secure and most importantly scalable to the sales<br> you aspire to.</p>
+            </div>
+            <div class="web-content">
+                <h1>Hosting and email</h1>
+                 <p>Without web hosting a website cannot exist, its online storage for the pages of your website.<br> Our hosting fee’s are very competitive. With web hosting comes basic email support with limited<br> email storage, we always recommend using a dedicated business email service. At Tec Team we<br> are a Google Workplace reseller which not only provides all your email storage needs but also much<br> more like, cloud storage, calendar’s, contact lists etc.</p>
+             </div>
+      </div>
+      <div class="process">
+         <h1>The Tec Team web design process:</h1>
+          <ul>
+            <li>Explore options and requirements.</li>
+            <li>Provide a quote with estimated time scale.</li>
+            <li>Take a deposit.</li>
+            <li>Provide a preview of the design.</li>
+            <li>Agree on finalised design.</li>
+            <li>Content & Photography sharing.</li>
+            <li>Review final design changes.</li>
+            <li>Pay final invoice.</li>
+            <li>New Website goes live.</li>
+            <li>Look at promoting the website and optimising.</li>
+            <li>Continue to provide support & promote new content/changes.</li>
+          </ul>
+      </div>     
+    </div>
+</div> 
+
+<footer class="footer">
+   <div class="foooter-container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Our services</a></li>
+                    <li><a href="#">Web design & Hosting</a></li>
+                    <li><a href="#">Meat The Team</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Leave a review</h4>
+                <div class="review">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Need help? Talk to an expert</h4>
+                <ul>
+                    <li><a href="#">01752 651143</a></li>   
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <h4>© All Copyright 2023 by Tec Team</h4>
+         </div>
+   </div>
+</footer>
+
+<script src="index.js"></script>      
+</html>
+</body> 
